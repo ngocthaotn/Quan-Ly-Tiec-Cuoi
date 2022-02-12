@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="737.0" prefWidth="1247.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quanlytieccuoi.FXML_choosemenuController">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="-4.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="1250.0" pickOnBounds="true" preserveRatio="true" translateY="64.0">
+               <image>
+                  <Image url="@Images/desmenu.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="2.0" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="1247.0">
+               <children>
+                  <HBox layoutX="154.0" layoutY="134.0" prefHeight="45.0" prefWidth="469.0">
+                     <children>
+                        <AnchorPane fx:id="b" minWidth="238.0" prefHeight="45.0" prefWidth="477.0" stylesheets="@style.css">
+                           <children>
+                              <TextField fx:id="txtSearch" layoutX="17.0" layoutY="6.0" prefHeight="31.0" prefWidth="453.0" promptText="Search" styleClass="searchCus">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="25.0" />
+                                 </padding>
+                                 <cursor>
+                                    <Cursor fx:constant="TEXT" />
+                                 </cursor>
+                              </TextField>
+                              <ImageView fitHeight="17.0" fitWidth="14.0" layoutX="33.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" translateX="-7.0" translateY="8.0" AnchorPane.leftAnchor="33.0">
+                                 <image>
+                                    <Image url="@Images/search2.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <VBox layoutX="167.0" layoutY="110.0" prefHeight="323.0" prefWidth="458.0" translateY="69.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="21.0" prefWidth="410.0">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <TableView fx:id="tbInfor" minHeight="193.0" minWidth="375.0" prefHeight="193.0" prefWidth="453.0">
+                           <VBox.margin>
+                              <Insets left="5.0" top="10.0" />
+                           </VBox.margin>
+                           <columns>
+                              <TableColumn fx:id="clName" prefWidth="299.0" text="Name" />
+                              <TableColumn fx:id="clPrice" prefWidth="153.0" text="Price" />
+                           </columns>
+                        </TableView>
+                        <VBox prefHeight="53.0" prefWidth="389.0">
+                           <children>
+                              <Button fx:id="btnChoose" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" styleClass="btnOrder" stylesheets="@style.css" text="CHOOSE" translateX="161.0" translateY="6.0" />
+                              <HBox alignment="CENTER" prefHeight="48.0" prefWidth="175.0" spacing="5.0" translateY="41.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <HBox layoutX="840.0" layoutY="280.0" prefHeight="168.0" prefWidth="321.0">
+                     <children>
+                        <VBox minWidth="68.0" prefHeight="127.0" prefWidth="156.0" spacing="10.0">
+                           <children>
+                              <Label prefHeight="35.0" prefWidth="119.0" text="Feast day:" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="119.0" text="Banquet Hall:" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="106.0" text="Price Hall: " textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="37.0" text="Total : " textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="75.0" prefWidth="207.0">
+                           <children>
+                              <Label fx:id="lbFeastDay" alignment="CENTER" prefHeight="25.0" prefWidth="211.0" textFill="WHITE" />
+                              <Label fx:id="lbBanquetHall" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="211.0" text="0.0" textFill="WHITE">
+                                 <padding>
+                                    <Insets top="15.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="lbPriceHall" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="211.0" text="0.0" textFill="WHITE">
+                                 <padding>
+                                    <Insets top="25.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="totalM" alignment="CENTER" layoutX="10.0" layoutY="60.0" prefHeight="25.0" prefWidth="211.0" text="0.0" textFill="WHITE">
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets top="7.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="106.0" prefWidth="52.0" spacing="10.0">
+                           <children>
+                              <Label minWidth="40.0" prefHeight="17.0" prefWidth="51.0" text="VND" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label layoutX="15.0" layoutY="55.0" minWidth="40.0" prefHeight="17.0" prefWidth="51.0" text="VND" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="15.0" layoutY="82.0" minWidth="40.0" prefHeight="17.0" prefWidth="51.0" text="VND" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets top="15.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <TableView fx:id="tbOrder" layoutX="174.0" layoutY="476.0" maxHeight="306.0" maxWidth="696.0" minHeight="106.0" minWidth="337.0" prefHeight="198.0" prefWidth="458.0">
+                     <columns>
+                        <TableColumn fx:id="clName1" prefWidth="150.0" text="Name" />
+                        <TableColumn fx:id="clPrice1" prefWidth="130.0" text="Price" />
+                        <TableColumn fx:id="clAmount" prefWidth="75.0" text="Amount" />
+                        <TableColumn fx:id="clUnitPrice" prefWidth="100.0" text="UnitPrice" />
+                     </columns>
+                  </TableView>
+                  <Label alignment="CENTER" layoutX="-2.0" layoutY="-4.0" prefHeight="77.0" prefWidth="1250.0" style="-fx-background-color: black;" text="CHOOSE MENU" textAlignment="CENTER" textFill="#ff3333">
+                     <font>
+                        <Font name="Tahoma Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnBack" layoutX="878.0" layoutY="600.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" styleClass="btnOrder" stylesheets="@style.css" text="BACK" />
+                  <Button fx:id="btnNext" layoutX="1035.0" layoutY="600.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" styleClass="btnOrder" stylesheets="@style.css" text="NEXT" />
+                  <Button fx:id="btnDelete" layoutX="338.0" layoutY="683.0" mnemonicParsing="false" onAction="#deleteOrder" prefHeight="35.0" prefWidth="130.0" styleClass="btnOrder" stylesheets="@style.css" text="DELETE" />
+                  <Label layoutX="843.0" layoutY="494.0" prefHeight="20.0" prefWidth="118.0" text="Phone number : ">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="843.0" layoutY="459.0" prefHeight="21.0" prefWidth="56.0" text="Name : ">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbName" layoutX="960.0" layoutY="454.0" prefHeight="31.0" prefWidth="150.0" text="....." />
+                  <Label fx:id="lbPhoneNumber" layoutX="961.0" layoutY="487.0" prefHeight="31.0" prefWidth="155.0" text="....." />
+                  <Label layoutX="843.0" layoutY="525.0" prefHeight="21.0" prefWidth="35.0" text="ID: ">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbId" layoutX="960.0" layoutY="520.0" prefHeight="31.0" prefWidth="150.0" text="....." />
+                  <Line endX="235.0" layoutX="941.0" layoutY="575.0" startX="-100.0" />
+                  <RadioButton fx:id="rdoPayOff" layoutX="864.0" layoutY="666.0" mnemonicParsing="false" text="Pay Off">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="pay" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rdoPrepayment" layoutX="1039.0" layoutY="656.0" mnemonicParsing="false" text="Prepayment" toggleGroup="$pay" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

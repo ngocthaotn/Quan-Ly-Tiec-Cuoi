@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="p" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#BanquetHallKeyPressed" prefHeight="545.0" prefWidth="887.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quanlytieccuoi.FXML_banquethallController">
+   <children>
+      <AnchorPane prefHeight="561.0" prefWidth="884.0">
+         <children>
+            <ImageView fitHeight="563.0" fitWidth="900.0" onKeyPressed="#BanquetHallKeyPressed" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Untitled-1.png" />
+               </image>
+            </ImageView>
+            <BorderPane layoutX="71.0" layoutY="58.0" prefHeight="447.0" prefWidth="759.0">
+               <top>
+                  <VBox prefHeight="56.0" prefWidth="759.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox prefHeight="55.0" prefWidth="781.0" style="-fx-background-color: #000000;" translateX="3.0">
+                           <children>
+                              <ImageView fitHeight="57.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/iconapp2.png" />
+                                 </image></ImageView>
+                              <Rectangle fill="WHITE" height="35.0" stroke="WHITE" strokeType="INSIDE" translateX="180.0" translateY="9.0" width="5.0" />
+                              <Label alignment="CENTER" text="INSERT NEW HALL" textFill="#ff3333" translateX="186.0">
+                                 <font>
+                                    <Font size="33.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets top="2.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </top>
+               <left>
+                  <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="391.0" prefWidth="0.0">
+                           <children>
+                              <ImageView fx:id="imageView" fitHeight="211.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true" translateX="6.0" translateY="14.0" />
+                              <VBox prefHeight="391.0" prefWidth="184.0">
+                                 <children>
+                                    <HBox prefHeight="95.0" prefWidth="238.0">
+                                       <children>
+                                          <Button fx:id="btnChooseImage" alignment="CENTER" mnemonicParsing="false" prefHeight="35.0" prefWidth="167.0" styleClass="border2" text="Choose Image" textFill="#4d4d4d" translateX="34.0" translateY="30.0">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Button>
+                                          <Label fx:id="lbChooseImage" prefHeight="35.0" prefWidth="31.0" translateX="35.0" translateY="30.0" visible="false">
+                                             <tooltip>
+                                                <Tooltip fx:id="ttChooseImage" />
+                                             </tooltip>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <Text fx:id="txtImage" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" translateX="6.0" translateY="-26.0" wrappingWidth="233.6708984375" />
+                                 </children>
+                                 <padding>
+                                    <Insets top="28.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </left>
+               <center>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: transparent;" styleClass="trans" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="509.0" prefWidth="519.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="txtName" alignment="CENTER" prefHeight="35.0" prefWidth="480.0" promptText="Name" styleClass="border1" translateX="20.0" translateY="21.0" />
+                                    <Label fx:id="lbName" prefHeight="26.0" prefWidth="32.0" translateX="-23.0" translateY="27.0">
+                                       <tooltip>
+                                          <Tooltip fx:id="ttName" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" translateX="3.0">
+                                 <children>
+                                    <TextField fx:id="txtAcreage" alignment="CENTER" prefHeight="35.0" prefWidth="480.0" promptText="Acreage" styleClass="border1" translateX="20.0" translateY="14.0" />
+                                    <Label fx:id="lbAcreage" prefHeight="26.0" prefWidth="32.0" translateX="-23.0" translateY="19.0">
+                                       <tooltip>
+                                          <Tooltip fx:id="ttAcreage" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="txtMaxPeople" alignment="CENTER" prefHeight="35.0" prefWidth="483.0" promptText="Max people" styleClass="border1" translateX="20.0" translateY="9.0" />
+                                    <Label fx:id="lbMaxPeople" layoutX="201.0" layoutY="10.0" prefHeight="26.0" prefWidth="32.0" translateX="-23.0" translateY="14.0">
+                                       <tooltip>
+                                          <Tooltip fx:id="ttMaxpeople" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="txtPrice" alignment="CENTER" prefHeight="35.0" prefWidth="480.0" promptText="Price" styleClass="border1" translateX="19.0" translateY="5.0" />
+                                    <Label fx:id="lbPrice" prefHeight="26.0" prefWidth="32.0" translateX="-23.0" translateY="10.0">
+                                       <tooltip>
+                                          <Tooltip fx:id="ttPrice" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="115.0" prefWidth="519.0" translateY="-11.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#saveBanquetHall" prefHeight="58.0" prefWidth="117.0" style="-fx-background-color: #ff3333;" text="INSERT" textAlignment="CENTER" textFill="WHITE" translateX="203.0" translateY="30.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Button>
+                              <Button fx:id="btnBack" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#saveBanquetHall" prefHeight="58.0" prefWidth="117.0" style="-fx-background-color: #ff3333;" text="BACK" textAlignment="CENTER" textFill="WHITE" translateX="40.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnEdit" layoutX="10.0" layoutY="41.0" mnemonicParsing="false" onAction="#saveBanquetHall" prefHeight="58.0" prefWidth="117.0" style="-fx-background-color: #ff3333;" text="EDIT" textAlignment="CENTER" textFill="WHITE" translateX="360.0" translateY="-32.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

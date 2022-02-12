@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quanlytieccuoi.FXML_createadminController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#adminKeyPressed" prefHeight="563.0" prefWidth="1270.0" stylesheets="@style.css">
+         <left>
+            <VBox prefHeight="563.0" prefWidth="376.0" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane alignment="TOP_LEFT" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="563.0" fitWidth="376.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/CA%20admin1.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btnPre" graphicTextGap="2.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="57.0" style="-fx-background-color: #f6f6f6;" textFill="#393545">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets top="20.0" />
+                           </StackPane.margin>
+                        </Button>
+                     </children>
+                  </StackPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets right="10.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="563.0" prefWidth="488.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="547.0" prefWidth="453.0">
+                     <children>
+                        <HBox prefHeight="60.0" prefWidth="467.0">
+                           <children>
+                              <HBox prefHeight="77.0" prefWidth="524.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010f2a" height="44.0" stroke="BLACK" strokeType="INSIDE" width="10.0">
+                                       <HBox.margin>
+                                          <Insets left="35.0" top="16.0" />
+                                       </HBox.margin>
+                                    </Rectangle>
+                                    <Label text="CREATE AN ACCOUNT ">
+                                       <font>
+                                          <Font size="27.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="11.0" top="16.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="226.0" prefWidth="524.0">
+                           <children>
+                              <VBox prefHeight="180.0" prefWidth="189.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="txtFirstName" focusTraversable="false" maxWidth="220.0" minHeight="35.0" minWidth="191.0" prefHeight="35.0" prefWidth="199.0" promptText="First name " styleClass="border5">
+                                             <HBox.margin>
+                                                <Insets left="3.0" top="10.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                          <Label fx:id="lbFirstName" prefHeight="35.0" prefWidth="27.0" translateX="2.0" translateY="10.0" visible="false">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                             <tooltip>
+                                                <Tooltip fx:id="ttFirstName" />
+                                             </tooltip>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <TextField fx:id="txtEmail" focusTraversable="false" layoutX="3.0" layoutY="8.0" maxWidth="220.0" minHeight="35.0" minWidth="191.0" prefHeight="35.0" prefWidth="197.0" promptText="Email" styleClass="border5" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="8.0">
+                                                   <padding>
+                                                      <Insets left="9.0" right="25.0" />
+                                                   </padding></TextField>
+                                                <ImageView fitHeight="16.0" fitWidth="20.0" layoutX="178.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Images/email.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label fx:id="lbEmail" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="197.0" layoutY="8.0" prefHeight="34.0" prefWidth="27.0" translateX="-1.0" visible="false">
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                   <tooltip>
+                                                      <Tooltip fx:id="ttEmail" />
+                                                   </tooltip>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="2.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="227.0">
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <TextField fx:id="txtQualification" focusTraversable="false" maxWidth="220.0" minHeight="35.0" minWidth="191.0" prefHeight="35.0" prefWidth="196.0" promptText="Qualification" styleClass="border5">
+                                                   <padding>
+                                                      <Insets left="9.0" right="25.0" />
+                                                   </padding></TextField>
+                                                <Label fx:id="lbQualification" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="197.0" prefHeight="34.0" prefWidth="27.0" translateX="-5.0" visible="false">
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                   <tooltip>
+                                                      <Tooltip fx:id="ttQualification" />
+                                                   </tooltip>
+                                                </Label>
+                                                <ImageView fitHeight="16.0" fitWidth="20.0" layoutX="174.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Images/job.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="11.0" left="3.0" top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="35.0" prefWidth="166.0">
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <ComboBox fx:id="comboboxGenDer" focusTraversable="false" maxWidth="220.0" minHeight="35.0" minWidth="191.0" onAction="#comboboxchanged" prefHeight="35.0" prefWidth="197.0" promptText="Gender" style="-fx-background-color: white;" styleClass="border5">
+                                                   <padding>
+                                                      <Insets right="3.0" />
+                                                   </padding>
+                                                </ComboBox>
+                                                <Label fx:id="lbGender" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="197.0" prefHeight="34.0" prefWidth="27.0" translateX="-5.0" visible="false">
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                   <tooltip>
+                                                      <Tooltip fx:id="ttGender" contentDisplay="RIGHT" />
+                                                   </tooltip>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="3.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets bottom="16.0" left="35.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox prefHeight="191.0" prefWidth="268.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="txtLastName" focusTraversable="false" maxWidth="220.0" minHeight="35.0" minWidth="191.0" prefHeight="35.0" prefWidth="197.0" promptText="Last name " styleClass="border5">
+                                             <HBox.margin>
+                                                <Insets left="3.0" top="10.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                          <Label fx:id="lbLastName" prefHeight="36.0" prefWidth="41.0" visible="false">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                             <tooltip>
+                                                <Tooltip fx:id="ttLastname" anchorX="9.0" anchorY="9.0" x="0.0" y="0.0" />
+                                             </tooltip>
+                                             <HBox.margin>
+                                                <Insets left="1.0" top="9.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane prefHeight="36.0" prefWidth="237.0">
+                                             <children>
+                                                <DatePicker fx:id="dpStartingDate" focusTraversable="false" maxWidth="220.0" minHeight="35.0" minWidth="191.0" prefHeight="35.0" prefWidth="197.0" promptText="Starting Date" style="-fx-background-color: transparent;" styleClass="border5" />
+                                                <Label fx:id="lbstartingDate" layoutX="200.0" prefHeight="36.0" prefWidth="38.0" translateX="-1.0" visible="false">
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                   <tooltip>
+                                                      <Tooltip fx:id="ttStartingDate" />
+                                                   </tooltip>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="3.0" top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane prefHeight="36.0" prefWidth="234.0">
+                                             <children>
+                                                <DatePicker fx:id="dpDateOfBirth" focusTraversable="false" maxWidth="220.0" minHeight="35.0" minWidth="191.0" prefHeight="35.0" prefWidth="197.0" promptText="Date Of Birth" styleClass="border5" />
+                                                <Label fx:id="lbDateOfBirth" layoutX="199.0" prefHeight="36.0" prefWidth="36.0" visible="false">
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                   <tooltip>
+                                                      <Tooltip fx:id="ttDateOfBirth" />
+                                                   </tooltip>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="12.0" left="3.0" top="8.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <TextField fx:id="txtPhoneNumber" focusTraversable="false" maxWidth="220.0" minHeight="35.0" minWidth="191.0" prefHeight="35.0" prefWidth="197.0" promptText="Phone number" styleClass="border5">
+                                                   <padding>
+                                                      <Insets left="9.0" right="25.0" />
+                                                   </padding></TextField>
+                                                <Label fx:id="lbPhoneNumber" layoutX="199.0" layoutY="-1.0" prefHeight="36.0" prefWidth="41.0" visible="false">
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                   <tooltip>
+                                                      <Tooltip fx:id="ttPhoneNumber" text="Empty Tooltip" />
+                                                   </tooltip>
+                                                </Label>
+                                                <ImageView fitHeight="16.0" fitWidth="20.0" layoutX="175.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Images/icon2.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="7.0" left="3.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets bottom="16.0" left="2.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="16.0" top="14.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="310.0" prefWidth="524.0">
+                           <children>
+                              <VBox prefHeight="250.0" prefWidth="529.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <TextField fx:id="txtAddress" focusTraversable="false" minHeight="35.0" prefHeight="35.0" prefWidth="425.0" promptText="Address" styleClass="border5">
+                                                   <padding>
+                                                      <Insets left="9.0" right="25.0" />
+                                                   </padding></TextField>
+                                                <Label fx:id="lbAddress" layoutX="432.0" prefHeight="36.0" prefWidth="28.0" translateX="-6.0" visible="false">
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                   <tooltip>
+                                                      <Tooltip fx:id="ttAddress" text="Empty Tooltip" />
+                                                   </tooltip>
+                                                </Label>
+                                                <ImageView fitHeight="16.0" fitWidth="20.0" layoutX="406.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Images/icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="-1.0" top="-27.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <ComboBox fx:id="comboboxPosition" focusTraversable="false" minHeight="35.0" prefHeight="35.0" prefWidth="425.0" promptText="Positions" style="-fx-background-color: transparent;" styleClass="border5">
+                                                   <padding>
+                                                      <Insets right="2.0" />
+                                                   </padding>
+                                                </ComboBox>
+                                                <Label fx:id="lbPosition" layoutX="431.0" prefHeight="36.0" prefWidth="28.0" translateX="-5.0" visible="false">
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                   <tooltip>
+                                                      <Tooltip fx:id="ttPositions" />
+                                                   </tooltip>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <TextField fx:id="txtUsername" focusTraversable="false" minHeight="35.0" prefHeight="35.0" prefWidth="425.0" promptText="Username" styleClass="border5">
+                                                   <padding>
+                                                      <Insets left="9.0" right="25.0" />
+                                                   </padding></TextField>
+                                                <Label fx:id="lbUsername" layoutX="431.0" prefHeight="36.0" prefWidth="28.0" translateX="-5.0" visible="false">
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                   <tooltip>
+                                                      <Tooltip fx:id="ttUserName" />
+                                                   </tooltip>
+                                                </Label>
+                                                <ImageView fitHeight="16.0" fitWidth="20.0" layoutX="405.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Images/human.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <PasswordField fx:id="txtPassword" focusTraversable="false" minHeight="35.0" prefHeight="35.0" prefWidth="426.0" promptText="Password" styleClass="border5">
+                                                   <padding>
+                                                      <Insets left="9.0" right="25.0" />
+                                                   </padding></PasswordField>
+                                                <Label fx:id="lbPassword" layoutX="431.0" prefHeight="36.0" prefWidth="28.0" translateX="-4.0" visible="false">
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                   <tooltip>
+                                                      <Tooltip fx:id="ttPassword" />
+                                                   </tooltip>
+                                                </Label>
+                                                <ImageView fitHeight="16.0" fitWidth="20.0" layoutX="406.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Images/lock.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <PasswordField fx:id="confirm" focusTraversable="false" minHeight="35.0" prefHeight="35.0" prefWidth="425.0" promptText="Confirm Password" styleClass="border5">
+                                                   <padding>
+                                                      <Insets left="9.0" right="25.0" />
+                                                   </padding></PasswordField>
+                                                <Label fx:id="lbConfirm" layoutX="431.0" prefHeight="36.0" prefWidth="28.0" styleClass="tooltips" translateX="-5.0" visible="false">
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                   <tooltip>
+                                                      <Tooltip fx:id="ttConfirm" text="Empty Tooltip" />
+                                                   </tooltip>
+                                                </Label>
+                                                <ImageView fitHeight="16.0" fitWidth="20.0" layoutX="405.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Images/lock.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="0.0" prefWidth="459.0" spacing="10.0">
+                                       <children>
+                                          <Button fx:id="btn" alignment="BOTTOM_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#saveAdmin" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: black;" text="CREATE ACCOUNT" textAlignment="CENTER" textFill="WHITE" translateY="8.0">
+                                             <font>
+                                                <Font name="Calibri Bold" size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets bottom="29.0" top="9.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="-11.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="40.0" right="25.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets right="10.0" />
+               </BorderPane.margin>
+               <padding>
+                  <Insets top="7.0" />
+               </padding>
+            </VBox>
+         </center>
+         <right>
+            <VBox prefHeight="563.0" prefWidth="110.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="91.0" prefWidth="423.0">
+                     <children>
+                        <HBox prefHeight="70.0" prefWidth="545.0">
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010f2a" height="44.0" stroke="BLACK" strokeType="INSIDE" translateY="8.0" width="10.0">
+                                 <HBox.margin>
+                                    <Insets left="35.0" top="16.0" />
+                                 </HBox.margin>
+                              </Rectangle>
+                              <Label text="INFORMATION" translateY="9.0">
+                                 <font>
+                                    <Font size="27.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="11.0" top="16.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="-35.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="72.0" prefWidth="397.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" translateY="-7.0">
+                           <children>
+                              <AnchorPane prefHeight="32.0" prefWidth="370.0" translateY="16.0">
+                                 <children>
+                                    <TextField fx:id="txtSearchBox" focusTraversable="false" prefHeight="37.0" prefWidth="396.0" promptText="Search" styleClass="border">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding></TextField>
+                                    <ImageView fitHeight="18.0" fitWidth="15.0" layoutX="377.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="4.0">
+                                       <image>
+                                          <Image url="@Images/search.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="378.0" prefWidth="397.0" translateY="1.0">
+                     <children>
+                        <TableView fx:id="tbAdmin" prefHeight="361.0" prefWidth="397.0" stylesheets="@style.css" translateY="-9.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TableView>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="1.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox prefHeight="57.0" prefWidth="397.0" translateY="-9.0">
+                     <children>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="53.0" prefWidth="423.0" spacing="34.0" translateY="1.0">
+                           <children>
+                              <Button fx:id="btUpdate" mnemonicParsing="false" onAction="#updateAdmin" prefHeight="27.0" prefWidth="150.0" style="-fx-background-color: black;" text="UPDATE" textAlignment="CENTER" textFill="WHITE" translateY="-10.0">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btDelete" mnemonicParsing="false" onAction="#deleteAdmin" prefHeight="24.0" prefWidth="147.0" style="-fx-background-color: black;" text="DELETE" textAlignment="CENTER" textFill="WHITE" translateY="-10.0">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets left="20.0" right="10.0" />
+               </BorderPane.margin>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</StackPane>

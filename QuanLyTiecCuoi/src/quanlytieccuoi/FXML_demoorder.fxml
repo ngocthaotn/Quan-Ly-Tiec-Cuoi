@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="638.0" prefWidth="1034.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quanlytieccuoi.FXML_demoorderController">
+   <children>
+      <HBox layoutY="-8.0" prefHeight="648.0" prefWidth="1034.0">
+         <children>
+            <AnchorPane prefHeight="492.0" prefWidth="487.0">
+               <children>
+                  <ImageView fitHeight="648.0" fitWidth="758.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/tree.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="btnView" alignment="CENTER" focusTraversable="false" layoutX="108.0" layoutY="578.0" minHeight="40.0" minWidth="81.0" prefHeight="40.0" prefWidth="173.0" styleClass="border4" stylesheets="@style.css" text="VIEW">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <VBox prefHeight="583.0" prefWidth="660.0">
+               <HBox.margin>
+                  <Insets top="65.0" />
+               </HBox.margin>
+               <children>
+                  <Label contentDisplay="RIGHT" prefHeight="58.0" prefWidth="612.0" style="-fx-background-color: #333333;" text="VIEW ORDERS" textFill="#ff3333">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tbOrders" maxHeight="340.0" minHeight="340.0" prefHeight="358.0" prefWidth="491.0" translateY="-6.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TableView>
+                  <VBox>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox prefHeight="182.0" prefWidth="602.0">
+                           <children>
+                              <JFXButton fx:id="btnPaid" alignment="CENTER" focusTraversable="false" maxHeight="40.0" minHeight="40.0" minWidth="81.0" prefHeight="40.0" prefWidth="132.0" styleClass="border4" stylesheets="@style.css" text="Paid" translateX="46.0" translateY="59.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="-1.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton fx:id="btnPrepayment" alignment="CENTER" focusTraversable="false" minHeight="40.0" minWidth="81.0" prefHeight="40.0" prefWidth="173.0" styleClass="border4" stylesheets="@style.css" text="Prepayment" translateX="79.0" translateY="59.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="1.0" />
+                                 </padding>
+                              </JFXButton>
+                              <JFXButton fx:id="btnBack" alignment="CENTER" focusTraversable="false" minHeight="40.0" minWidth="81.0" prefHeight="40.0" prefWidth="132.0" styleClass="border4" stylesheets="@style.css" text="Back" translateX="107.0" translateY="59.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="-1.0" />
+                                 </padding>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Label alignment="CENTER" prefHeight="21.0" prefWidth="604.0" text="© 2020 WEDDING KINGDOM" textAlignment="CENTER">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

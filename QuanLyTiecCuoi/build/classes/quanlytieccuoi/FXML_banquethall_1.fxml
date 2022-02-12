@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="p" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#BanquetHallKeyPressed" prefHeight="581.0" prefWidth="1333.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quanlytieccuoi.FXML_banquethallController_1">
+   <children>
+      <AnchorPane prefHeight="612.0" prefWidth="1333.0">
+         <children>
+            <ImageView fitHeight="583.0" fitWidth="928.0" onKeyPressed="#BanquetHallKeyPressed" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Untitled-1.png" />
+               </image>
+            </ImageView>
+            <BorderPane layoutX="71.0" layoutY="58.0" prefHeight="447.0" prefWidth="759.0">
+               <top>
+                  <VBox prefHeight="57.0" prefWidth="781.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox minWidth="785.0" prefHeight="57.0" prefWidth="771.0" style="-fx-background-color: #000000;" translateX="3.0">
+                           <children>
+                              <ImageView fitHeight="57.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/iconapp2.png" />
+                                 </image></ImageView>
+                              <Rectangle fill="WHITE" height="35.0" stroke="WHITE" strokeType="INSIDE" translateX="189.0" translateY="10.0" width="5.0" />
+                              <Label alignment="CENTER" text="EDIT HALL" textFill="#ff3333" translateX="197.0" translateY="4.0">
+                                 <font>
+                                    <Font size="33.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </top>
+               <left>
+                  <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="391.0" prefWidth="0.0">
+                           <children>
+                              <ImageView fx:id="imageView" fitHeight="207.0" fitWidth="229.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" translateY="14.0" />
+                              <VBox prefHeight="391.0" prefWidth="184.0" translateY="25.0">
+                                 <children>
+                                    <HBox prefHeight="95.0" prefWidth="238.0">
+                                       <children>
+                                          <Button fx:id="btnChooseImage1" alignment="CENTER" mnemonicParsing="false" prefHeight="35.0" prefWidth="167.0" styleClass="border2" text="Choose Image" textFill="#4d4d4d" translateX="32.0" translateY="50.0">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Button>
+                                          <Label fx:id="lbChooseImage" prefHeight="35.0" prefWidth="31.0" translateX="32.0" translateY="50.0" visible="false">
+                                             <tooltip>
+                                                <Tooltip fx:id="ttChooseImage" />
+                                             </tooltip>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <Text fx:id="txtImage" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" translateX="6.0" wrappingWidth="233.6708984375" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </left>
+               <center>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: transparent;" styleClass="trans" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="509.0" prefWidth="519.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="txtName" alignment="CENTER" prefHeight="35.0" prefWidth="480.0" promptText="Name" styleClass="border1" translateX="20.0" translateY="21.0" />
+                                    <Label fx:id="lbName" prefHeight="26.0" prefWidth="32.0" translateX="-23.0" translateY="27.0">
+                                       <tooltip>
+                                          <Tooltip fx:id="ttName" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" translateX="3.0">
+                                 <children>
+                                    <TextField fx:id="txtAcreage" alignment="CENTER" prefHeight="35.0" prefWidth="480.0" promptText="Acreage" styleClass="border1" translateX="20.0" translateY="14.0" />
+                                    <Label fx:id="lbAcreage" prefHeight="26.0" prefWidth="32.0" translateX="-23.0" translateY="19.0">
+                                       <tooltip>
+                                          <Tooltip fx:id="ttAcreage" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="txtMaxPeople" alignment="CENTER" prefHeight="35.0" prefWidth="483.0" promptText="Max people" styleClass="border1" translateX="20.0" translateY="9.0" />
+                                    <Label fx:id="lbMaxPeople" layoutX="201.0" layoutY="10.0" prefHeight="26.0" prefWidth="32.0" translateX="-23.0" translateY="14.0">
+                                       <tooltip>
+                                          <Tooltip fx:id="ttMaxpeople" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="txtPrice" alignment="CENTER" prefHeight="35.0" prefWidth="480.0" promptText="Price" styleClass="border1" translateX="19.0" translateY="5.0" />
+                                    <Label fx:id="lbPrice" prefHeight="26.0" prefWidth="32.0" translateX="-23.0" translateY="10.0">
+                                       <tooltip>
+                                          <Tooltip fx:id="ttPrice" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="14.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefHeight="115.0" prefWidth="519.0" translateY="-11.0" />
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+            <TableView fx:id="tbHall" layoutX="943.0" layoutY="119.0" prefHeight="302.0" prefWidth="377.0" />
+            <Button fx:id="btDelete" layoutX="1146.0" layoutY="478.0" mnemonicParsing="false" onAction="#deleteData" prefHeight="22.0" prefWidth="117.0" style="-fx-background-color: #ff3333;" styleClass="border4" text="DELETE" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <AnchorPane fx:id="b" layoutX="10.0" layoutY="10.0" minWidth="238.0" prefHeight="45.0" prefWidth="413.0" stylesheets="@style.css" translateX="900.0" translateY="50.0">
+               <children>
+                  <TextField fx:id="txtSearchBox" layoutX="30.0" layoutY="6.0" prefHeight="31.0" prefWidth="377.0" promptText="Search" styleClass="searchCus">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <ImageView fitHeight="17.0" fitWidth="14.0" layoutX="33.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" translateX="6.0" translateY="8.0" AnchorPane.leftAnchor="33.0">
+                     <image>
+                        <Image url="@Images/search2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btBack" layoutX="906.0" layoutY="478.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="117.0" style="-fx-background-color: #ff3333;" styleClass="border4" text="BACK" textAlignment="CENTER" textFill="WHITE" translateX="100.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btUpdate" layoutX="520.0" layoutY="477.0" mnemonicParsing="false" onAction="#updateBanquetHall" prefHeight="31.0" prefWidth="117.0" style="-fx-background-color: #ff3333;" styleClass="border4" text="UPDATE" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,2 @@
+# QuanLyTiecCuoi
+Quản lý sảnh/phòng tiệc cưới. Có 5 loại sảnh A, B, C, D, E với đơn giá sinh viên cho tùy chọn. Nhận đặt tiệc cưới bao gồm đặt sảnh, các món ăn, thức uống và dịch vụ cho tiệc cưới. Tiệc cưới chỉ nhận đặt hai ca là trưa và tối. Tra cứu tiệc cưới. Lập hóa đơn thanh toán. Ngày thanh toán phải trùng ngày đãi tiệc, thành toán trễ phạt 1%/ngày. Lập báo cáo và vẽ biểu đồ doanh thu tháng, quý và năm.
